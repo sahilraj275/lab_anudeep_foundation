@@ -2,18 +2,18 @@
 #  given sentence string = """To change the overall look of your document. To change the look available in the gallery"""
 
 
-string = """To change the overall look of your document. To change the look available in the gallery"""
+# string = """To change the overall look of your document. To change the look available in the gallery"""
 
-words = string.split()
-wordCount = {}
+# words = string.split()
+# wordCount = {}
 
-for word in words:
-    if word in wordCount:
-        wordCount[word] += 1
-    else:
-        wordCount[word] = 1
+# for word in words:
+#     if word in wordCount:
+#         wordCount[word] += 1
+#     else:
+#         wordCount[word] = 1
 
-print(wordCount)
+# print(wordCount)
 
 
 # 2.Write a Python program to remove a newline in Python
@@ -29,13 +29,13 @@ print(wordCount)
 # 3. Write a Python program to reverse words in a string
 #  String = “Deeptech Python Training”
 
-string = "Deeptech Python Training"
+# string = "Deeptech Python Training"
 
-rev = ""
+# rev = ""
 
-for i in string:
-    rev = i + rev
-print(rev)
+# for i in string:
+#     rev = i + rev
+# print(rev)
 
 
 # 5.Write a Python program to count and display the vowels of a given text
@@ -120,8 +120,58 @@ print(rev)
 
 #! 5.Write a Python program to traverse a given list in reverse order, and print the elements with the original index. Original list: ['red', 'green', 'white', 'black'] Traverse the said list in reverse order: black white green red
 
-original_list = ["red", "green", "white", "black"]
+# original_list = ["red", "green", "white", "black"]
 
-# Print reversed elements
-for element in reversed(original_list):
-    print(element)
+# # Print reversed elements
+# for element in reversed(original_list):
+#     print(element)
+
+# set lab
+#! 1.Write a Python program to Get Only unique items from two sets.
+#  Input:
+#  set1 = {10, 20, 30, 40, 50}
+#  set2 = {30, 40, 50, 60, 70}
+#  Output:
+#  {70, 40, 10, 50, 20, 60, 30}
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+unique_items = set1.union(set2)
+# print("Unique items from both sets:", unique_items)
+
+#! 2.Write a Python program to Return a set of elements present in Set A or B, but not both.
+#  Input:
+#  set1 = {10, 20, 30, 40, 50}
+#  set2 = {30, 40, 50, 60, 70}
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+setSymmetricDifference = set1.symmetric_difference(set2)
+
+# print(setSymmetricDifference)
+
+
+#! 3. Write a Python program to Check if two sets have any elements in common. If
+#  yes, display the common elements.
+#  Input:
+#  set1 = {10, 20, 30, 40, 50}
+#  set2 = {60, 70, 80, 90, 10}
+
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {60, 70, 80, 90, 10}
+
+setIntersection = set1.intersection(set2)
+# print(setIntersection)
+
+
+#! 4. Write a Python program to Remove items from set1 that are not common to both set1 and set2.
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+setZ = set1.intersection(set2)
+print(setZ)
